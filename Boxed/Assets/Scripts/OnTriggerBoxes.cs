@@ -8,7 +8,7 @@ public class OnTriggerBoxes : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Wall")
+        if (collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Portal")
         {
             wallTrigState = 1;
         }
@@ -27,7 +27,7 @@ public class OnTriggerBoxes : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.tag == "Wall" && wallTrigState == 1)
+        if ((collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Portal") && wallTrigState == 1)
         {
             wallTrigState = 0;
         }

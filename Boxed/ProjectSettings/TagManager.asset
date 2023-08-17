@@ -18,6 +18,7 @@ TagManager:
   - MainBottom
   - MainLeft
   - MainRight
+  - Portal
   layers:
   - Default
   - TransparentFX
