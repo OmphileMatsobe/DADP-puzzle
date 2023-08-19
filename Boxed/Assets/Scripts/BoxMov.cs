@@ -28,7 +28,7 @@ public class BoxMov : MonoBehaviour
 
     IEnumerator delayFun()
     {
-        yield return new WaitForSeconds(0.29f);
+        yield return new WaitForSeconds(0.25f);
         lockInt = 0;
     }
     // Update is called once per frame
