@@ -19,6 +19,7 @@ TagManager:
   - MainLeft
   - MainRight
   - Portal
+  - BGWall
   layers:
   - Default
   - TransparentFX
@@ -29,9 +30,9 @@ TagManager:
   - Collectibles
   - Box
   - Player
-  - 
-  - 
-  - 
+  - MainBox
+  - OutsideTiles
+  - BGWALL
   - 
   - 
   - 
