@@ -97,6 +97,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1732608925301549056}
     - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
+      propertyPath: direction
+      value: VU
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
       propertyPath: inputVec.y
       value: 1
       objectReference: {fileID: 0}
@@ -175,6 +179,10 @@ PrefabInstance:
       propertyPath: dest
       value: 
       objectReference: {fileID: 1732608925543306095}
+    - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
+      propertyPath: direction
+      value: HR
+      objectReference: {fileID: 0}
     - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
       propertyPath: inputVec.x
       value: 1
@@ -255,6 +263,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1204245552461188969}
     - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
+      propertyPath: direction
+      value: HL
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
       propertyPath: inputVec.x
       value: -1
       objectReference: {fileID: 0}
@@ -333,6 +345,10 @@ PrefabInstance:
       propertyPath: dest
       value: 
       objectReference: {fileID: 1732608925076776767}
+    - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
+      propertyPath: direction
+      value: VD
+      objectReference: {fileID: 0}
     - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
       propertyPath: inputVec.y
       value: -1
@@ -413,6 +429,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1732608925020719731}
     - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
+      propertyPath: direction
+      value: HL
+      objectReference: {fileID: 0}
+    - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
       propertyPath: inputVec.x
       value: -1
       objectReference: {fileID: 0}
@@ -483,6 +503,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6468127359647121481, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
+      propertyPath: m_Size.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6468127359647121481, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
+      propertyPath: m_Offset.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
       propertyPath: id
       value: 2
@@ -491,6 +519,10 @@ PrefabInstance:
       propertyPath: dest
       value: 
       objectReference: {fileID: 1732608925225561186}
+    - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
+      propertyPath: direction
+      value: HR
+      objectReference: {fileID: 0}
     - target: {fileID: 7030033378225920438, guid: c51cf2407a982a0498d220ebeb920391, type: 3}
       propertyPath: inputVec.x
       value: 1

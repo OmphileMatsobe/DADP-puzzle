@@ -123,6 +123,50 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &22113341
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 22113343}
+  - component: {fileID: 22113342}
+  m_Layer: 0
+  m_Name: Menu
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &22113342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22113341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11c4ad051aa96449dfd8eb5bde63a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &22113343
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 22113341}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.5008335, y: -1.2703882, z: 0.097624764}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &266935586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1105,7 +1149,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 12
+    m_FontSize: 10
     m_FontStyle: 1
     m_BestFit: 0
     m_MinSize: 1
@@ -1131,7 +1175,9 @@ MonoBehaviour:
     timer from level 2 onwards, the aim is to be the timer if you dont the level
     restarts and you lose tokens if you had collected any.\n\nIf time runs out you
     loose a few collectibles in addition to repeating the level.Goodluck and have
-    a blast but be aware................................ Clocks Ticking.............."
+    a blast but be aware................................ Clocks Ticking..............\n\nIf
+    you collect more than one Ruby Stone, press C to reset a box within the\nborders
+    you are in."
 --- !u!222 &1390918798
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1590,9 +1636,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1778386713}
-        m_TargetAssemblyTypeName: Scenemanager, Assembly-CSharp
-        m_MethodName: OnExitButtonClicked
+      - m_Target: {fileID: 22113342}
+        m_TargetAssemblyTypeName: MenuControl, Assembly-CSharp
+        m_MethodName: MainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

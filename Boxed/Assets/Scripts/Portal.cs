@@ -8,6 +8,9 @@ public class Portal : MonoBehaviour
     [SerializeField] int id;
     [SerializeField] GameObject dest;
     [SerializeField] Vector2 inputVec;
+    [SerializeField] string direction; 
+    
+    Vector2 addVec, correctionVec;
     GameObject player;
     Vector2 move;
     bool allowMove = false;
@@ -15,6 +18,15 @@ public class Portal : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        if (direction == "HR")
+            addVec = new Vector2(1,0);
+        else if (direction == "HL")
+            addVec = new Vector2(-1,0);
+        if (direction == "VU")
+            addVec = new Vector2(0,1);
+        else if (direction == "VD")
+            addVec = new Vector2(0,-1);
+
         player = GameObject.FindWithTag("Player");
     }
 
@@ -56,13 +68,13 @@ public class Portal : MonoBehaviour
         }
 
 
-
+        correctionVec = dest.transform.position;
 
         if (allowMove)
         {
             if (move == inputVec)
             {
-                player.transform.position = dest.transform.position;
+                player.transform.position = correctionVec + addVec;
             }
         }
     }
