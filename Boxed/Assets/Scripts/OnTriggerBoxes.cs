@@ -21,7 +21,7 @@ public class OnTriggerBoxes : MonoBehaviour
 
     IEnumerator delay()
     {
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(0.25f);
         playerContState = 1;
     }
 

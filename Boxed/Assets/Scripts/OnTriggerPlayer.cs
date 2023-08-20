@@ -17,7 +17,6 @@ public class OnTriggerPlayer : MonoBehaviour
         if ((collision.gameObject.tag == "Wall" || collision.gameObject.tag == "Box")  && trigState == 1)
         {
             trigState = 0;
-        }
-        
+        }       
     }
 }

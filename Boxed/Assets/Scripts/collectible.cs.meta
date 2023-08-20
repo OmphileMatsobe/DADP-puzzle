@@ -1,10 +1,9 @@
 fileFormatVersion: 2
-guid: 60084bf059eeb0345902bba5b2589975
+guid: 0a7d4104e074d954e9afb03c0ef0adf2
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences:
-  - RubyStone: {fileID: 3354484863637946179, guid: d7d9b0d24d57c074391175fca515247b, type: 3}
+  defaultReferences: []
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

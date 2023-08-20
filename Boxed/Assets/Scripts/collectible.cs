@@ -2,14 +2,20 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class collectible : MonoBehaviour
 {
-    [SerializeField] GameObject RubyStone;
-
     // Start is called before the first frame update
     void Start()
     {
-        Instantiate(RubyStone, new Vector2(0.5f, 0.5f), Quaternion.identity);
+        
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "MainBox")
+        {
+            Destroy(this.gameObject);
+        }
     }
 
     // Update is called once per frame
